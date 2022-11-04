@@ -7,12 +7,15 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "color-picker-app",
+    "productName": "color-picker",
     "version": "0.0.1"
   },
   "tauri": {
     "allowlist": {
-      "all": true
+      "window": {
+        "all": true,
+        "setPosition": true
+      }
     },
     "bundle": {
       "active": true,
@@ -65,7 +68,8 @@
         "resizable": false,
         "alwaysOnTop": true,
         "decorations": true,
-        "center": true
+        "x": -320,
+        "y": -100
       }
     ]
   }
