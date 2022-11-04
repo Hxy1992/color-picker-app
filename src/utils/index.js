@@ -11,11 +11,16 @@ export function setWindowPosition(hide = false) {
         const screenWidth = window.screen.width
         const screenHeight = window.screen.height
         if (hide) {
-        await appWindow.setPosition(new LogicalPosition(screenWidth + size.width, screenHeight + size.height))
+            await appWindow.setPosition(new LogicalPosition(screenWidth + size.width, screenHeight + size.height))
         } else {
-        await appWindow.setPosition(new LogicalPosition(screenWidth - size.width, screenHeight - size.height))
+            await appWindow.setPosition(new LogicalPosition(screenWidth - size.width, screenHeight - size.height))
         }
         resolve()
     })
 }
-  
+
+export async function listenWindowMove() {
+    appWindow.onMoved(() => {
+        window.location.reload()
+    })
+}
