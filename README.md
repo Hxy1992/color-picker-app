@@ -4,6 +4,6 @@
 
 + 软件下载：https://github.com/Hxy1992/color-picker-app/releases
 
-![image text](./docs/capture.jpg)
+![image text](https://img2022.cnblogs.com/blog/1068060/202211/1068060-20221104091524566-794986325.jpg)
 
-![image text](./docs/use.png)
+![image text](https://img2022.cnblogs.com/blog/1068060/202211/1068060-20221104091534424-1380955451.png)
